@@ -1,11 +1,11 @@
 import React from 'react' 
 
 import "./Construction.css"
-import { hero } from '../assets'
+import hero
 const Construction = () => {
   return (
     <div style={{display:"flex" ,flexDirection:"column" ,justifyContent:"center",alignItems:"center",alignContent:"center"}} >
-      <div className='img'><img src={hero} style={{maxHeight:"100%", objectFit:"cover"}} /></div>
+      <div className='img'><img src="src/assets/hero.png" style={{maxHeight:"100%", objectFit:"cover"}} /></div>
 
         
         <h1  >Wesbite Under Construction</h1>
