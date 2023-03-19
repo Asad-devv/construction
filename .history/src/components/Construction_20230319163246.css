@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: darkblue;
+    padding: 0;
+}
+
+h1{
+    color:white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+img{
+    padding-top: 1rem;
+    
+}
+.img{
+    height: auto;
+    width: auto;
+}
+

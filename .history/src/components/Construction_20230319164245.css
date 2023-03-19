@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #271134;
+    padding: 0;
+  }
+  
+  h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .img {
+    height: auto;
+    width: auto;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Media queries for different screen sizes */
+  
+  /* For screens smaller than 768px (e.g., mobile devices) */
+  @media (max-width: 767px) {
+    .img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    h1{
+        font-size: 1.3rem;
+    }
+  }
+  
+  /* For screens between 768px and 1023px (e.g., tablets) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .img {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For screens larger than 1024px (e.g., desktops) */
+  @media (min-width: 1024px) {
+    .img {
+      max-width: 50%;
+      margin: 0 auto;
+    }
+  }
+  
+  a{
+    cursor: pointer;
+    color: darkblue;
+    font-variant: unde;
+  }
