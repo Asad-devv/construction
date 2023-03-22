@@ -1,0 +1,36 @@
+import React from "react";
+
+
+const services = [
+    {
+      heading: "Service 1",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      heading: "Service 2",
+      text: "Nullam vitae lectus nec magna tristique maximus eu vel eros."
+    },
+    {
+      heading: "Service 3",
+      text: "Fusce sed malesuada libero. Donec luctus elit id lorem egestas, vel tincidunt sapien fringilla."
+    }
+  ];
+  
+  
+
+const Services = () => {
+  return (
+    <div>
+      <div className="text-white flex flex-col justify-centear h-[70vh] bg-[#252562] items-acenter items-center justify-center  py-5 md:py-5">
+      <h2 className="text-[3rem] font-black ">Our Services</h2>        <h3 className="text-[2rem] text-gray-500">What we offer</h3>
+      </div>
+      <div className="">
+            {services.map(()=>{
+                return
+            })}
+      </div>
+    </div>
+  );
+};
+
+export default Services;
