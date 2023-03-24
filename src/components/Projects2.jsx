@@ -71,11 +71,12 @@ const App = ({ projects, heading, subtext }) => {
       </Carousel>
 
       <div className="flex mt-10 lg:px-5 md:px-5 sm:px-10 flex-wrap justify-center">
-        {projects.map((project) => {
+        {projects.map((project,i) => {
           return (
             <Card
               imageUrl={project.img}
-              heading={project.name ? project.name : "AL Sambola Projects"}
+              heading={project.name ? project.name : "AL Sonbola Projects"}
+              key={i}
             />
           );
         })}

@@ -11,13 +11,13 @@ const OurMission = () => {
         <div className="flex-1 mb-8 md:mx-10 lg:mx-10 md:mb-0 sm:mx-10 md:mr-16">
           <p className="text-[1rem] ">
             Established in 2013 as a Construction Business with the Mother
-            Company Name M/s Haidar Abdulla Contracting Established in 1960,
+            Company Name <bold>M/s Haidar Abdulla Contracting Established</bold> in 1960,
             Over the years, the family business has undertaken many challenging
             projects of Construction,<br/><br/> Building Trade and Project Management
             Services. Today, one of the company has role of medium size projects
             and performs contracting and maintenance services in the market for
-            Villas, medium size buildings,<br/><br/> factories and Ware house projects
-            with the name of Al SONBOLA CONTRACTING. We provide the complete
+            Villas, medium size buildings, factories and Ware house projects<br/><br/>
+            with the name of <bold>Al SONBOLA CONTRACTING.</bold> We provide the complete
             support with value added experiences in Architecture, engineering,
             planning and execution of any type of construction project.<br/> <br/>Our
             Objective is to provide the “SATISFICATION” to our client with an
@@ -32,7 +32,7 @@ const OurMission = () => {
 
         <div className="flex-1 lg:h-[70vh] ml-2 mr-2 sm:h-[50vh] ">
           <img
-            src="https://www.westend61.de/images/0000767413pw/construction-worker-talking-to-man-and-woman-on-a-construction-site-ZEF12466.jpg"
+            src="http://etcs.com.pk/wp-content/uploads/2012/11/construction.jpg"
             alt="Mission"
             className="w-full rounded-md shadow-lg lg:h-[70vh]  sm:h-[50vh] object-cover"
           />
