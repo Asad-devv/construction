@@ -3,7 +3,7 @@ import React from "react";
 const OurMission = () => {
   return (
     <div className="flex flex-col items-center justify-center sm:px-10  px-10 md:px-10 lg:px-10  py-12 md:py-24">
-      <h2 className=" lg:text-[3rem] md:text-[3rem] text-[1.5rem]  font-black mb-8">
+      <h2 className=" lg:text-[3rem] md:text-[3rem] text-[2rem]  font-black mb-8">
         About us
       </h2>
 

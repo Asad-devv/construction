@@ -1,7 +1,10 @@
 import React from 'react'
 import Carousel from "nuka-carousel";
-import NavBar from './Navbar';
+
 import { hero,registered } from '../assets';
+import LazyLoad from 'react-lazy-load';
+
+
 
 const images = [{
   tag:'"Transforming spaces and building the future with expertise and innovation."',
@@ -43,7 +46,7 @@ const Hero = () => {
       );
   return (
     <>
-    <NavBar/>
+    
     <Carousel
       renderCenterLeftControls={renderControlsLeft}
       renderCenterRightControls={renderControlsRight}
@@ -51,18 +54,19 @@ const Hero = () => {
       wrapAround={true}
       autoplayInterval={3000}
       // style={{ height: "80vh" }}
-      className="h-[20vh]"
+      // className="h-[20vh]"
     >
       {images.map((image, i) => {
         return (
           <div className='relative text-center'>
+            <LazyLoad>
           <img
             src={image.img}
             alt="image"
-            className="md:h-[85vh] lg:h-[85vh] h-auto sm:h-[55vh]  sm:object-fill opacity-95
+            className="md:h-[85vh] lg:h-[85vh] h-[58vh] sm:h-[60vh]  sm:object-fill opacity-95
              w-full  bg-blend-darken	 lg:object-fill"
             key={i}
-          />
+          /></LazyLoad>
                <div className="absolute opacity-100 inset-0  flex flex-col justify-center items-center z-10">
                 {console.log(i)}
                 <h1 className={` ${i==2 ? "self-start text-white lg:text-[4rem]" : "lg:text-[5rem] text-white"} sm:text-md  px-10 pb-5 font-bold`}>{image.tag}</h1>

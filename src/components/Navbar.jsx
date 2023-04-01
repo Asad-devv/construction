@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { logo } from "../assets";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white shadow">
+        <nav  className="w-full bg-white shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="rounded-xl  flex items-center justify-between py-1 md:py-3 md:block ">
                     <div className="flex items-center">
-        <img src={logo} alt="logo" className="w-20 h-20 bg-blue-900 object-contain rounded-full" />
-        <h1 className="text-2xl font-[900] ml-2   ">AL SONBOLA
-<br/> CONTRACTING</h1>
+        <Link to="/"><img src={logo} alt="logo" className="w-20 h-20 bg-blue-900 object-contain rounded-full" /></Link>
+        <Link to="/">    <h1 className="text-2xl font-[900] ml-2   ">AL SONBOLA
+<br/> CONTRACTING</h1></Link>
     </div>
                         
                         <div className="md:hidden">
