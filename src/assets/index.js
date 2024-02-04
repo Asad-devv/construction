@@ -26,7 +26,7 @@ import incomp2 from "./incomp2.png";
 import incomp3 from "./incomp3.png";
 
 import interior1 from "./interior1.png";
-import interior2 from "./interior1.png";
+import interior2 from "./interior2.png";
 
 import whatsapp from "./whatsapp.png";
 import email from "./email.png";

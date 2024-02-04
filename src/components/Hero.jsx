@@ -2,18 +2,15 @@ import React from 'react'
 import Carousel from "nuka-carousel";
 
 import { hero,registered } from '../assets';
-import LazyLoad from 'react-lazy-load';
 
 
 
 const images = [{
-  tag:'"Transforming spaces and building the future with expertise and innovation."',
-  img : "https://media.istockphoto.com/id/981344368/photo/silhouette-of-engineer-and-construction-team-working-at-site-over-blurred-background-sunset.jpg?b=1&s=170667a&w=0&k=20&c=jlejSCmAQhMaO-5ypXbdFDuYHWOkdkvbHr_436sCa8Y="
-
-
-},{
   tag: "Established in 2013  ." ,
   img : hero
+},{
+  tag:'"Transforming spaces and building the future with expertise and innovation."',
+  img : "https://media.istockphoto.com/id/981344368/photo/silhouette-of-engineer-and-construction-team-working-at-site-over-blurred-background-sunset.jpg?b=1&s=170667a&w=0&k=20&c=jlejSCmAQhMaO-5ypXbdFDuYHWOkdkvbHr_436sCa8Y="
 
 
 },{
@@ -59,16 +56,13 @@ const Hero = () => {
       {images.map((image, i) => {
         return (
           <div className='relative text-center'>
-            <LazyLoad>
-          <img
+            <img
             src={image.img}
             alt="image"
-            className="md:h-[85vh] lg:h-[85vh] h-[58vh] sm:h-[60vh]  sm:object-fill opacity-95
-             w-full  bg-blend-darken	 lg:object-fill"
+            className="md:h-[85vh] lg:h-[85vh] h-[58vh] sm:h-[60vh]  sm:object-fill opacity-95 w-full  bg-blend-darken	 lg:object-fill"
             key={i}
-          /></LazyLoad>
+          />
                <div className="absolute opacity-100 inset-0  flex flex-col justify-center items-center z-10">
-                {console.log(i)}
                 <h1 className={` ${i==2 ? "self-start text-white lg:text-[4rem]" : "lg:text-[5rem] text-white"} sm:text-md  px-10 pb-5 font-bold`}>{image.tag}</h1>
                 { !(i==2) &&
                 <button className={`bg-blue-900 z-10 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full cursor-pointer`}><a  className='cursor-pointer'>{!(i==2) && "Contact US now"}</a></button>}
@@ -79,6 +73,8 @@ const Hero = () => {
       })}
 
     </Carousel>
+
+
 
   </>
   )

@@ -6,18 +6,18 @@ export default function NavBar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav  className="w-full bg-white shadow">
+        <nav className="w-full bg-white shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    <div className="rounded-xl  flex items-center justify-between py-1 md:py-3 md:block ">
-                    <div className="flex items-center">
-        <Link to="/"><img src={logo} alt="logo" className="w-20 h-20 bg-blue-900 object-contain rounded-full" /></Link>
-        <Link to="/">    <h1 className="text-2xl font-[900] ml-2   ">AL SONBOLA
-<br/> CONTRACTING</h1></Link>
-    </div>
-                        
+                    <div className="rounded-full  flex items-center justify-between py-1 md:py-3 md:block ">
+                        <div className=" flex items-center">
+                            <Link to="/"><img src={logo} alt="logo" className="w-25 h-20 bg-white shadow-sm object-contain rounded-full" /></Link>
+                            <Link to="/">    <h1 className="text-2xl font-[800] tracking-wide ml-2   ">AL  SONBOLA
+                                <br /> CONTRACTING</h1></Link>
+                        </div>
+
                         <div className="md:hidden">
-                        
+
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                                 onClick={() => setNavbar(!navbar)}
@@ -57,20 +57,19 @@ export default function NavBar() {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                            navbar ? "block" : "hidden"
-                        }`}
+                        className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                            }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-lg font-semibold">
                             <li className="text-gray-900 hover:text-blue-900">
                                 <a href="/">Home</a>
                             </li>
                             <li className="text-gray-900 hover:text-blue-900">
-                                <a href="#COMPLETED PROJECTS">Completed Projects</a>
+                                <a href="#Completed Projects">Completed Projects</a>
                             </li>      <li className="text-gray-900 hover:text-blue-900">
                                 <a href="#On-Going PROJECTS">On-going Projects</a>
                             </li>
-    
+
                             <li className="text-gray-900 hover:text-blue-900">
                                 <a href="#contact">Contact US</a>
                             </li>
