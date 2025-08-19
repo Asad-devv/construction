@@ -3,7 +3,7 @@ import { whatsapp,email } from "../assets";
 
 const FloatContact = () => {
   return (
-    <div className="w-[29vh] flex flex-row justify-center items-center mx-2 animate-bounce my-3 fixed py-2 gap-3  right-0 bottom-0 bg-gray-900 border-4 rounded-full px-4 text-white ">
+    <div className="w-[29vh] flex flex-row justify-center items-center mx-2 animate-bounce my-3 fixed py-2 z-50 gap-3  right-0 bottom-0 bg-gray-900 border-4 rounded-full px-4 text-white ">
     <p className="text-xl ">Contact:</p>
     
     <a

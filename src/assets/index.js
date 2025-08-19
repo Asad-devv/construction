@@ -1,4 +1,5 @@
 import hero from "./hero.png";
+import hero1 from "./hero1.jpg"
 import logo from "./logo.png";
 import comp1 from "./comp1.png";
 import comp2 from "./comp2.png";
@@ -71,6 +72,7 @@ const interiorDesign = [
 export {
   email,
   hero,
+  hero1,
   whatsapp,
   logo,
   completedProjects,

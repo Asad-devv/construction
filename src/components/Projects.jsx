@@ -46,12 +46,12 @@ const App = ({ projects, heading, subtext }) => {
     </div>
   );
   return (
-    <div id={heading} className="mt-[10rem] flex flex-col justify-center">
+    <div id={heading} className="mt-20 flex flex-col bg-white justify-center">
       <div className="px-5 items-center flex flex-col justify-center">
         <h1 className="lg:text-[4rem] text-center  text-slate-900 font-bold sm:text-[2rem] text-[2rem]">
           {heading}.
         </h1>
-        <p className="mb-10 text-center self-start text-[1.2rem] text-gray-800">{subtext}</p>
+        <p className="mb-10 text-center self-start text-[1.2rem] text-gray-700">{subtext}</p>
       </div>
       <Carousel
         renderCenterLeftControls={renderControlsLeft}

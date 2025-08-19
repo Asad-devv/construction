@@ -8,7 +8,7 @@ const Footer = () => {
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="" class="flex items-center mb-4 sm:mb-0">
                 <img src={logo} class="h-8 mr-3" alt="logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">AL Sanbola Contracting</span>
+                <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-white">AL Sanbola Contracting</span>
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
@@ -26,7 +26,7 @@ const Footer = () => {
             </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm overflow-hidden text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="" class=" hover:underline">x   AL Sanbola Contracting™</a>. All Rights Reserved.</span>
+        <span class="block text-sm overflow-hidden text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="" class=" hover:underline">AL Sanbola Contracting™</a>. All Rights Reserved.</span>
     </div>
 </footer>
 

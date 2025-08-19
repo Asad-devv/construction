@@ -13,7 +13,7 @@ import About from "./components/About"
 import NavBar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom"
 import Details from "./components/Details";
-import HeroSection from "./components/Check";
+// import HeroSection from "./components/Check";
 import PartneredWith from "./components/Partners";
 
 
@@ -23,16 +23,20 @@ function App() {
   return (
     <div>
       <NavBar/>
-      < HeroSection/>
-      <PartneredWith/>
+      {/* < HeroSection/> */}
+      
       <Routes>
         <Route path="/" element={
 
-          <> <Hero />
+          <> 
+          
+          <Hero />
       
-
+      <PartneredWith/>
           <OurMission />
+          
           <Services />
+          
           <About/>
           <Projects projects={completedProjects} heading="Completed Projects" subtext="View our completed projects and see how Al Sonbola Construction delivers high-quality projects on time and within budget. Our team of experts works closely with clients to exceed their expectations on every project, from commercial and industrial buildings to residential homes and public infrastructure."/>
           
@@ -43,7 +47,7 @@ function App() {
         } />
              <Route path="/details" element={<Details/>} /> 
       </Routes>
-      <FloatContact/>
+      {/* <FloatContact/> */}
 
       <Footer/>
     </div>

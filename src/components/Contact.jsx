@@ -127,11 +127,11 @@ Thank you! Email has been successfully Sent			</p>
         style={{ backgroundImage: `url('/background.jpg')` }}
       >
         <div className="h-full flex flex-col items-center justify-center text-white">
-          <h1 className="text-7xl font-bold mb-4  text-center">Contact Us</h1>
+          <h1 className="text-4xl font-black mb-4  text-center">Contact Us</h1>
           <form ref={formRef}           onSubmit={handleSubmit}
  className="flex flex-col w-full max-w-md">
             <label htmlFor="name" 
-            className="text-lg mb-2"
+            className="text-md mb-2"
             name='name'
             value={form.name}
             onChange={handleChange}
@@ -142,24 +142,24 @@ Thank you! Email has been successfully Sent			</p>
             <input
               id="name"
               type="text"
-              className=" bg-gray-200 text-black rounded-lg mb-4 py-4 px-4"
+              className="text-md bg-gray-200 text-black rounded-sm mb-4 py-4 px-2"
               name='email'
               value={form.email}
               required
               onChange={handleChange}
             />
 
-            <label htmlFor="email" className="text-lg mb-2">
+            <label htmlFor="email" className="text-md mb-2">
               Email:
             </label>
             <input
               id="email"
               type="email"
               required
-              className=" bg-gray-200 text-black rounded-lg mb-4 py-4 px-4"
+              className=" bg-gray-200 text-black rounded-sm mb-4 py-4 px-2"
             />
 
-            <label htmlFor="message" className="text-lg mb-2">
+            <label htmlFor="message" className="text-md mb-2">
               Message:
             </label>
             <textarea
@@ -168,7 +168,7 @@ Thank you! Email has been successfully Sent			</p>
               name='message'
               value={form.message}
               onChange={handleChange}
-              className=" bg-gray-200 text-black rounded-lg mb-4 py-4 px-4"
+              className=" bg-gray-200 text-black rounded-sm mb-4 py-4 px-2"
             ></textarea>
 
             <button disabled={loading} className="bg-blue-500 text-white font-bold py-2 px-1 rounded-sm hover:bg-green-700 transition-colors duration-300">
@@ -193,7 +193,7 @@ Thank you! Email has been successfully Sent			</p>
             Build your dream project with us
           </h1>
         </div>
-        <div className=" mx-10 w-1/2 lg:gap-10 sm:gap-2 bg-gray-2a00 flex lg:flex-row flex-col items-center justify-center">
+        <div className=" mx-10 w-1/2 lg:gap-10 sm:gap-2  flex lg:flex-row flex-col items-center justify-center">
           <div className="w-50 mt-8">
             <CircularProgressbar
               value={75}

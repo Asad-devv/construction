@@ -9,11 +9,11 @@ const partners = [
 
 const PartneredWith = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl">
-            Partnered With
+        <div className="text-center">
+          <h2 className="text-3xl font-black leading-tight text-gray-900 sm:text-4xl">
+            TRUSTED BY
           </h2>
         </div>
         <div className="mt-10 grid grid-cols-2 gap-10 md:grid-cols-4 lg:grid-cols-4">
